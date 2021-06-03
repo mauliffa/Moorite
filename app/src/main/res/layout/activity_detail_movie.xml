@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <ImageView
+                android:id="@+id/imgMoviePoster"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/movie_poster"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_black"
+                android:layout_gravity="bottom" >
+
+                <TextView
+                    android:id="@+id/txtMovieTitle"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/movie"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtMovieRelease"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="@string/release"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounder_grey"
+            app:layout_constraintTop_toBottomOf="@id/frameLayout"
+            app:layout_constraintStart_toStartOf="@id/storyline" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:contentDescription="@string/star"
+            app:layout_constraintStart_toEndOf="@id/txtMovieRelease"
+            app:layout_constraintTop_toTopOf="@id/txtMovieScore"
+            app:layout_constraintBottom_toBottomOf="@id/txtMovieScore"/>
+
+        <TextView
+            android:id="@+id/txtMovieScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:text="@string/score"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounder_grey"
+            app:layout_constraintTop_toBottomOf="@id/frameLayout"
+            app:layout_constraintStart_toEndOf="@id/star" />
+
+        <TextView
+            android:id="@+id/storyline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/storyline"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/txtMovieRelease"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtMovieSynopsis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/synopsis"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/storyline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

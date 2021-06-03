@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="favorite_movie">FILM KESUKAAN</string>
+    <string name="favorite_tv_show">SERIAL TV KESUKAAN</string>
+    <string name="you_don_t_have_any_favorite_tv_show">Anda belum memiliki serial tv yang disukai.</string>
+    <string name="you_don_t_have_any_favorite_movie">Anda belum memiliki film yang disukai.</string>
+</resources>

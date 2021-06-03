@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "Moorite"
+include ':core'
+include ':favorite'
