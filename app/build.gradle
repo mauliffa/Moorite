@@ -33,11 +33,6 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-        checkReleaseBuilds false
-    }
-
     buildTypes {
         release {
             minifyEnabled false
