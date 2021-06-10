@@ -1,8 +1,10 @@
 package com.example.core.domain.model
 
+import android.annotation.SuppressLint
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
+@SuppressLint("ParcelCreator")
 @Parcelize
 data class Movie(
     var movieId: Int ?= null,
